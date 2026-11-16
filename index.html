@@ -32,7 +32,7 @@
 <a class="whatsapp-float wa-link" href="#contact" aria-label="Contact Zari Sutra on WhatsApp"><span>☏</span></a>
 <script>
 // Add the business country code and WhatsApp number here (digits only) for direct chat, e.g. 919876543210.
-const WHATSAPP_NUMBER = '';
+const WHATSAPP_NUMBER = '9140807626';
 const defaultMessage = 'Hello Himanshi! I would love help finding a sari from Zari Sutra.';
 document.querySelectorAll('.wa-link').forEach(link=>{const target=WHATSAPP_NUMBER?`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(defaultMessage)}`:`https://wa.me/?text=${encodeURIComponent(defaultMessage+' Please share your WhatsApp contact with me.')}`;link.href=target;link.target='_blank';link.rel='noopener noreferrer'});
 document.querySelectorAll('.filter').forEach(btn=>btn.addEventListener('click',()=>{document.querySelector('.filter.active')?.classList.remove('active');btn.classList.add('active');document.querySelectorAll('.product').forEach(card=>card.hidden=btn.dataset.filter!=='all'&&!card.dataset.category.includes(btn.dataset.filter))}));
